@@ -1,6 +1,5 @@
 'use strict';
 
-console.log('RunnerMap component loading');
 var runnerMap = (function () {
 
     var map;
@@ -120,7 +119,6 @@ var runnerMap = (function () {
 
     function snackTrace(msg) {
         var snackbarContainer = document.querySelector('#snackbar');
-        //var showSnackbarButton = document.querySelector('#demo-show-snackbar');
         var data = {
             message: msg,
             timeout: 5000,

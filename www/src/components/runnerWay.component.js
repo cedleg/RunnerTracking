@@ -1,6 +1,5 @@
 'use strict';
 
-console.log('RunnerWay component loading');
 var runnerWay = (function() {
 
     /**

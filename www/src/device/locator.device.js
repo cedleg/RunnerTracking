@@ -1,6 +1,5 @@
 'use strict';
 
-console.log('Locator device loading');
 var locator = (function() {
 
     /**
