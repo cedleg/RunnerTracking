@@ -18,9 +18,9 @@ Add script in html file
 </script>
 ```
 
-Browers & Device compilation
+Serve in Browers & Device
 ```
-npm run phonegap
+npm run phonegap serve
 ```
 
 ## Contributor
