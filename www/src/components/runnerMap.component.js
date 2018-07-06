@@ -9,10 +9,8 @@ var runnerMap = (function () {
     var directionsDisplay;
 
     function clear(){
-        //console.log('clear');
         directionsDisplay.setMap(null);
         window.document.getElementById('clearDirection').style.display = 'none';
-        //window.document.getElementById('clearDirection').classList.add('hidden');
     }
 
     function trace() {
@@ -30,12 +28,9 @@ var runnerMap = (function () {
             if ('OK' == status) {
                 directionsDisplay.setDirections(response);
                 window.document.getElementById('clearDirection').style.display = 'block';
-                //window.document.getElementById('clearDirection').classList.add("visible");
                 return;
             }
-            //Gestion de error
             this.snackTrace('Can\'t determine direction!');
-
         });
     }
 
@@ -63,7 +58,6 @@ var runnerMap = (function () {
     }
 
     function createMarker(position) {
-        // Create a marker and set its position.
         marker = new google.maps.Marker({
             map: map,
             position: position,
@@ -72,7 +66,6 @@ var runnerMap = (function () {
     }
 
     function geocodeLatLng(geocoder, map, infowindow, position) {
-
         geocoder.geocode({ 'location': position }, function (results, status) {
             if (status === 'OK') {
                 if (results[0]) {
@@ -88,7 +81,6 @@ var runnerMap = (function () {
     }
 
     function success() {
-
         locPosition = locator.getPosition();
         if (!map) {
             createMap(locPosition);
@@ -103,7 +95,6 @@ var runnerMap = (function () {
         geocodeLatLng(geocoder, map, infowindow);
     }
 
-    //Error callback
     function error() {
         snackTrace('Can\'t determine your position!');
     }

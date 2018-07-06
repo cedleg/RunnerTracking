@@ -13,10 +13,6 @@ var locator = (function() {
      */
     var position;
 
-    /**
-     * @returns [Object] locator module
-     */
-
      var successCallback = function(event){
         position = { lat: event.coords.latitude, lng: event.coords.longitude };
         this(position);
