@@ -10,10 +10,8 @@ platforms/*
 .cordova/
 
 package-lock.json
-node_modules/
-hooks/
-www/node_modules/
-www/res/
-www/spec/
-src/
-www/dist/
+node_modules
+hooks
+www/res
+www/spec
+www/dist
