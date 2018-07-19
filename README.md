@@ -24,4 +24,9 @@ npm run phonegap serve
 ```
 
 ## Contributor
+
 Cyril Itchi, Open source trainer
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
